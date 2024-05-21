@@ -1,0 +1,71 @@
+/* css: all around styles */
+*,
+html,
+body {
+  box-sizing: border-box;
+}
+.container {
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  font-size: 20px;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  height: 70px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  color: whitesmoke;
+  margin: auto 25px;
+  display: flex;
+  align-items: center;
+  width: 33%;
+  text-decoration: underline solid whitesmoke;
+  text-underline-offset: 8px;
+  height: 100%;
+  margin-bottom: 12px;
+  transition: all 0.3s ease-in;
+}
+.navbar a:hover:not(.active) {
+  color: yellowgreen;
+  text-decoration: underline solid yellowgreen;
+  text-underline-offset: 12px;
+  transform: scale(1.2);
+}
+a.active {
+  color: yellowgreen;
+  text-decoration: underline solid yellowgreen;
+  text-underline-offset: 12px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 75%;
+}
+main h2 {
+  color: purple;
+}
+main h3 {
+  color: goldenrod;
+}
+/* css: index page styles */
+main ul {
+  list-style-position: outside;
+}
+/* css: products page styles */
+main ol li {
+    margin-bottom: 75px;
+}
+main ol li img {
+    width: 450px;
+    height: 450px;
+    box-shadow: 2px 5px 10px 10px whitesmoke;
+}
