@@ -1,0 +1,72 @@
+/* css: all around styles */
+*,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 90vw;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+}
+.row_1 {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 98%;
+  height: min-content;
+  margin-bottom: 15px;
+}
+.row_1 input {
+  width: 350px;
+  margin: 5px;
+}
+.row_1 .buttons button {
+  margin: 5px;
+}
+.row_2 {
+  display: flex;
+  align-items: center;
+  width: 98%;
+  height: min-content;
+  margin-bottom: 15px;
+}
+.row_2 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+.row_2 .col_1 {
+  width: calc(4 / 12 * 100%);
+  background-color: #7fffd4;
+}
+.row_2 .col_2 {
+  width: calc(3 / 12 * 100%);
+  background-color: #66cdaa;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.row_2 .col_3 {
+  width: calc(5 / 12 * 100%);
+  background-color: #3EB489;
+}
+.row_2 .col_3 .buttons{
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+.row_2 .col_3 .buttons button{
+    margin-right: 15px;
+    width: 100px;
+}
