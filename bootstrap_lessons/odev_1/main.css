@@ -1,0 +1,49 @@
+*,html,body{
+  box-sizing: border-box !important;
+}
+.text-maroon{
+  color: maroon !important;
+}
+.text-purple{
+  color: purple !important;
+}
+.text-gold{
+  color: goldenrod !important;
+}
+.navbar a {
+  color: whitesmoke;
+  margin: auto 25px;
+  display: flex;
+  align-items: center;
+  width: 33%;
+  text-decoration: underline solid whitesmoke;
+  text-underline-offset: 8px;
+  height: 100%;
+  margin-bottom: 12px;
+  transition: all 0.3s ease-in;
+}
+.navbar a:hover:not(.active) {
+  color: yellowgreen;
+  text-decoration: underline solid yellowgreen;
+  text-underline-offset: 12px;
+  transform: scale(1.2);
+}
+a.active {
+  color: yellowgreen !important;
+  text-decoration: underline solid yellowgreen !important;
+  text-underline-offset: 12px;
+}
+.navbar-toggler,.navbar-toggler:hover,.navbar-toggler:focus{
+  outline: none !important;
+}
+.btn-outline-secondary:hover{
+  color: yellowgreen;
+  border: 1px solid whitesmoke !important;
+}
+.bottom-10{
+  bottom: 10px !important;
+  transform: translateY(-10px);
+}
+.bg-body-custom-jumbotron{
+  background-color: #E9ECEF;
+}
