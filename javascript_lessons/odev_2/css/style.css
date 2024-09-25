@@ -15,7 +15,8 @@ ul li {
   font-size: 18px;
   transition: 0.2s;
   list-style-type: none;
-
+ display: flex;
+ justify-content: space-between;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -25,7 +26,6 @@ ul li {
 ul li:nth-child(odd) {
   background: #f9f9f9;
 }
-
 ul li:hover {
   background: #ddd;
 }
@@ -48,7 +48,10 @@ ul li.checked::before {
   height: 15px;
   width: 7px;
 }
-
+ul li button {
+  border: none;
+  background-color: transparent;
+}
 .close {
   position: absolute;
   right: 0;
