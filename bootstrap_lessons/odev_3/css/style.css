@@ -1,19 +1,20 @@
 .navbarbg {
-  height: 55px;
+  height: 54px;
   background-color: white;
 }
 
-input.search {
+input.searche {
   height: 36px;
   max-width: 500px;
   background-color: #eef3f8;
   border: 0;
 }
 
-input.search::placeholder {
+input.searche::placeholder {
   font-size: 14px;
   color: gray;
   background-image: url("../assets/search-solid.svg");
+  padding-left: 25px;
   background-repeat: no-repeat;
   background-size: 7%;
 }
@@ -27,7 +28,8 @@ input.search::placeholder {
   font-family: Arial, Helvetica, sans-serif;
   color: gray;
   margin-top: 5px;
-  font-weight: lighter;
+  font-weight: 100;
+  text-align: center;
 }
 
 .menutext:hover {
@@ -65,9 +67,10 @@ input.content::placeholder {
   font-weight: bolder;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(/bootstraplinkedinclone/assets/edit-regular.svg);
+  background-image: url("../assets/edit-regular.svg");
   background-repeat: no-repeat;
   background-size: auto;
+  padding-left: 25px;
 }
 
 div.card {
