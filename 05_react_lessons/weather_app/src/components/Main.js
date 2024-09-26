@@ -56,10 +56,10 @@ function Main() {
               {weather.forecast.forecastday.map((e) => (
                 <div className={`card_body ${e.date === todayDate ? 'today' : ''}`}>
                   <h5>{getWeekdayName(e.date)}</h5>
-                  <img src={e.day.condition.icon} />
+                  <img src={e.day.condition.icon} alt=""/>
                   <span key={e.date}>
                     {" "}
-                    <b>{Math.round(e.day.maxtemp_c)} °C</b> | {Math.round(e.day.mintemp_f)} °C
+                    <b>{Math.round(e.day.maxtemp_c)} °C</b> | {Math.round(e.day.mintemp_c)} °C
                   </span>
                 </div>
               ))}
