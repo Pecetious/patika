@@ -1,0 +1,22 @@
+.app {
+  text-align: center;
+  height: 100vh;
+}
+.app.dark {
+  background-color: black;
+  color: white;
+}
+button{
+  border: 0;
+  border-bottom: black 1px solid;
+  border-radius: 15px;
+  box-shadow: 0px 1px 2px 1px;
+  background: none;
+}
+button:hover{
+  cursor: pointer;
+}
+.dark button{
+  background-color: rgb(12, 12, 12);
+  color: antiquewhite;
+}

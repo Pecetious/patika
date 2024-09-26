@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+label{
+  margin-bottom: 5px;
+  text-decoration: underline green;
+  text-underline-offset: 3px;
+}
+input{
+  border: 0;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  border-spacing: 5px;
+  outline: none;
+  margin-bottom: 15px;
+}
+div.error{
+  color: red;
+  margin-bottom: 20px;
+}

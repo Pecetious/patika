@@ -1,0 +1,71 @@
+h1{
+    color: rgba(175, 47, 47, 0.15)
+}
+.container{
+    width: 400px;
+    background-color: aliceblue;
+    padding: 20px;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .list{
+    margin: 15px auto;
+  }
+  .list > li{
+    background-color: antiquewhite;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  li:hover .btn-delete{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+  }
+  li > span {
+    width: 33%;
+    gap: 0.5rem;
+  }
+  .btn{
+    border: 1px solid black;
+  }
+  .btn:hover{
+    background-color: black;
+    color: aqua;
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+  .btn-delete{
+    width: 10%;
+    display: none;
+  }
+  .filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .filters button{
+    
+    font-size: 26px;
+  }
+  .finished{
+    background-color: greenyellow;
+    color: violet;
+  }
+  .active{
+    background-color: aqua;
+    color: black;
+  }
+  .card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-footer span{
+    font-size: 14px;
+  }
