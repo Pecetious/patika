@@ -1,4 +1,13 @@
-import { render, screen } from '@testing-library/react';
-import Header from "./Header"
+import React from "react";
+import ReactDOM from "react-dom";
+import Header from "./Header";
 
-describe("Header must be rendered")
+it("renders header component without crashing", () => {
+  const div = document.createElement("div");
+  ReactDOM.render(<Header />, div);
+  
+  // Test that the header contains the correct text
+  expect(div.textContent).toContain("Emoji Search");
+
+  ReactDOM.unmountComponentAtNode(div);
+});
