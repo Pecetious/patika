@@ -1,0 +1,48 @@
+.napkinbtn {
+  padding: 5px 15px;
+  font-size: 12px;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 5px;
+}
+.napkinbtn-default {
+  background-color: #fff;
+  color: #000;
+}
+.napkinbtn-default:hover {
+  border-color: #007bff;
+  color: #007bff;
+}
+.napkinbtn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+.napkinbtn-primary:hover {
+  background-color: rgba(0, 123, 255, 0.7);
+}
+.napkinbtn-dashed {
+  background-color: #fff;
+  color: #000;
+  border: 1px dashed #007bff;
+}
+.napkinbtn-dashed:hover {
+  border-color: #007bff;
+  color: #007bff;
+}
+.napkinbtn-text {
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+.napkinbtn-text:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.napkinbtn-link {
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+}
+.napkinbtn-link:hover {
+  color: rgba(0, 123, 255, 0.7);
+}
