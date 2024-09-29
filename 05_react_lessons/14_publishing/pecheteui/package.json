@@ -1,0 +1,27 @@
+{
+  "name": "pecheteui",
+  "version": "1.0.0",
+  "description": "A simple ui library for React",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "source": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "microbundle --jsx React.createElement"
+  },
+  "microbundle": {
+    "output": "dist",
+    "entry": "src/index.js",
+    "name": "pecheteui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1"
+  }
+}

@@ -1,0 +1,2 @@
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?t(exports,require("react")):"function"==typeof define&&define.amd?define(["exports","react"],t):t((e||self).pecheteui={},e.react)}(this,function(e,t){function n(e){return e&&"object"==typeof e&&"default"in e?e:{default:e}}var o=/*#__PURE__*/n(t);e.Button=function(e){/*#__PURE__*/return o.default.createElement("button",e,e.text)},e.ExampleComponent=function(e){/*#__PURE__*/return o.default.createElement("div",{className:"_1m8-E"},"Example Component: ",e.text)}});
+//# sourceMappingURL=index.umd.js.map
