@@ -1,3 +1,14 @@
+.logo {
+  font-weight: bolder;
+  color: darkmagenta;
+  text-transform: uppercase;
+  text-shadow: 
+    0 0 5px rgba(255, 105, 180, 0.7),  /* Light pink glow */
+    0 0 10px rgba(255, 20, 147, 0.5),  /* Deeper pink glow */
+    0 0 15px rgba(255, 20, 147, 0.7),  /* Stronger pink glow */
+    0 0 20px rgba(255, 105, 180, 1);    /* Solid pink glow */
+
+}
 .nav {
   padding: 13px;
   display: flex;
