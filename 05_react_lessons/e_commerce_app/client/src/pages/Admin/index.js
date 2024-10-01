@@ -4,7 +4,9 @@ import { Link, Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Orders from "./Orders"; // Ensure you have these components
 import Products from "./Products";
+import ProductDetail from "./ProductDetail";
 import "./style.css"
+import NewProduct from "./Products/new";
 function Admin() {
   return (
     <div>
@@ -23,12 +25,11 @@ function Admin() {
       </nav>
       <Box mt="10">
         <Routes>
-          {/* Define the routes here */}
-          <Route path="/" element={<Home />} /> {/* Renders for /admin */}
-          <Route path="orders" element={<Orders />} />{" "}
-          {/* Renders for /admin/orders */}
-          <Route path="products" element={<Products />} />{" "}
-          {/* Renders for /admin/products */}
+          <Route path="/" element={<Home />} /> 
+          <Route path="orders" element={<Orders />} />
+          <Route path="products" element={<Products />} />
+          <Route path="products/new" element={<NewProduct />} />
+          <Route path="products/:product_id" element={<ProductDetail />} />
         </Routes>
       </Box>
     </div>
