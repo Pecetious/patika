@@ -5,13 +5,13 @@ import ContentCard from "./components/ContentCard";
 import SearchForm from "./components/SearchForm";
 import NoteGrid from "./components/NoteGrid";
 function App() {
-  const notes = useSelector((state) => state.notes.notes); // Get notes from Redux store
+  const notes = useSelector((state) => state.notes.notes); 
   const [hasNotes, setHasNotes] = useState(false);
   useEffect(() => {
     const savedNotes = localStorage.getItem("notes");
     if (savedNotes) {
       const parsedNotes = JSON.parse(savedNotes);
-      setHasNotes(parsedNotes.length > 0); // Check if there is at least one note
+      setHasNotes(parsedNotes.length > 0); 
     }
   }, [notes]);
   return (

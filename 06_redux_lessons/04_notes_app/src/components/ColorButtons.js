@@ -1,10 +1,9 @@
 import React from "react";
 import { Radio } from "antd";
 import { useDispatch, useSelector } from "react-redux";
-import { setSelectedValue } from "../redux/radioSlice"; // Import the action
+import { setSelectedValue } from "../redux/radioSlice"; 
 
 function ColorButtons() {
-  // Define the options array with className, value, and label for each button
   const options = [
     { value: "#f56c8e", className: "radio_red", label: "Red" },
     { value: "#b37feb", className: "radio_purple", label: "Purple" },
@@ -13,13 +12,11 @@ function ColorButtons() {
     { value: "#95de64", className: "radio_green", label: "Green" },
   ];
 
-  // Use Redux dispatch and selector
   const dispatch = useDispatch();
   const selectedValue = useSelector((state) => state.radio.selectedValue);
 
-  // Function to handle radio button change and dispatch selected value to Redux store
   const onChange = (e) => {
-    dispatch(setSelectedValue(e.target.value)); // Dispatch the selected value to Redux
+    dispatch(setSelectedValue(e.target.value)); 
   };
 
   return (

@@ -31,7 +31,6 @@ function NoteGrid() {
             </Card>
           </Col>
         ))}
-      {/* <Col span={8} className='grid_col'><div>WHUDDUP</div></Col> */}
     </Row>
   );
 }
