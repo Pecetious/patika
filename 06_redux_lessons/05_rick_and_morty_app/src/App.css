@@ -1,0 +1,160 @@
+html {
+  background-color: #f5f5f5;
+}
+.App {
+  text-align: center;
+}
+.nav {
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav ul {
+  margin: 0 0 10px 0;
+  display: flex;
+  padding: 10px;
+  list-style-type: none;
+}
+.nav ul li {
+  padding: 5px;
+}
+.nav ul li a {
+  text-decoration: none;
+  border: 2px dashed black;
+  padding: 5px;
+}
+.nav ul li a:hover {
+  background-color: burlywood;
+  border-style: solid;
+  color: white;
+}
+.masonry_grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.masonry_col {
+  padding-left: 30px;
+  background-clip: padding-box;
+}
+.character_card {
+  text-align: center;
+  width: fit-content;
+  margin: 25px;
+}
+
+.character_card h5 {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.character_card a {
+  border: 20px solid orangered;
+  border-radius: 25px;
+  display: block;
+  background-color: #dfdfdf;
+  color: #333;
+  text-decoration: none;
+}
+.character_card a:hover {
+  text-decoration: underline;
+  border: 10px solid orangered;
+  padding: 0;
+}
+.character_card a:hover img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.character_detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  padding: 0 0 0 50px;
+  margin: 0 auto;
+}
+.character_detail h2 {
+  text-align: center;
+}
+.character_detail .img_container {
+  display: flex;
+  width: 500px;
+  height: 500px;
+}
+.character_detail img {
+  width: 100%;
+}
+.character_detail p {
+  display: flex;
+  align-self: flex-start;
+  width: fit-content;
+  font-size: 20px;
+  text-align: center;
+}
+.character_detail .character_detail_loc{
+  text-decoration: none;
+  margin-left: 10px;
+  text-transform: uppercase;
+  color: green;
+}
+.loc_title {
+  text-align: center;
+  color: goldenrod;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.loc_card {
+  text-align: center;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: #dfdfdf;
+  border: 5px solid rgba(92, 67, 4, 0.5);
+}
+.loc_card a {
+  text-decoration: none;
+  color: rgb(92, 67, 4);
+}
+.loc_card a:hover {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-underline-offset: 5px;
+}
+.loc_detail {
+  padding: 10px;
+}
+
+.loc_detail h2,
+.loc_detail h4,
+.loc_detail p {
+  text-transform: uppercase;
+  text-align: center;
+}
+.loc_detail .loc_residents_card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  border: 1px solid red;
+  border-radius: 25px;
+}
+
+.loc_residents_card {
+  text-decoration: none;
+  color: rgb(92, 67, 4);
+}
+.loc_residents_card h5{
+  margin: 3px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.loc_residents_card img{
+  border-radius: 20px !important;
+  margin-bottom: 5px;
+}
