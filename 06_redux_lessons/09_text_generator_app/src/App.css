@@ -1,0 +1,61 @@
+*,
+html,
+body {
+  box-sizing: border-box;
+  background-color: rgb(43, 42, 42);
+  color: white;
+}
+.App {
+  min-height: 100vh;
+  text-align: center;
+}
+.header {
+  max-width: 90%;
+  margin: 10px auto;
+}
+.header h1 {
+  letter-spacing: 2px;
+}
+.content {
+  border-top: 3px solid rgba(250, 250, 250, 0.8);
+  border-bottom: 3px solid rgb(250, 250, 250);
+  border-radius: 12px;
+  margin: 0 40px;
+  padding: 5px 0;
+}
+.paragraph_container {
+  width: 90%;
+  padding: 20px;
+  margin: 15px auto;
+  min-height: fit-content;
+  background-color: rgb(51, 51, 51);
+  border-radius: 10px;
+}
+.paragraph_container p {
+  text-wrap: wrap;
+  text-align: start;
+  display: block;
+  background-color: transparent;
+}
+.input_container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+.input_container .paragraph_input,
+.input_container .paragraph_select {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-right: 10px;
+}
+.input_container .paragraph_input label,
+.input_container .paragraph_select label {
+  margin-bottom: 10px;
+  font-size: larger;
+}
+.input_container .paragraph_input input,
+.input_container .paragraph_select select {
+  font-size: larger;
+  max-width: fit-content;
+}

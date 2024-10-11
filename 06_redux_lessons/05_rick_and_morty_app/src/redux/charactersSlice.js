@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+importimport { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 export const getCharacters = createAsyncThunk("getCharacters", async (page) => {
   const { data } = await axios.get(
