@@ -1,0 +1,122 @@
+/* Reset & Global Styling */
+*,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  background-color: #87CEEB; /* Sky blue background */
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card Container */
+.content_card {
+  width: 700px;
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for transparency effect */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.content_card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+.content_card .title {
+  color: #1e3a8a; /* Dark blue title */
+  font-size: 24px;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #1e3a8a;
+  margin: 15px auto;
+  padding-bottom: 5px;
+  width: fit-content;
+}
+
+/* Weather Data Styling */
+.weather_card .weather_data {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.weather_card .weather_data div {
+  background-color: #e0f7fa; /* Light cyan for card background */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.weather_card .weather_data div:hover {
+  transform: scale(1.05);
+}
+
+/* Weather Image Container */
+.weather_img_container img {
+  margin-bottom: 5px;
+}
+.weather_img_container p {
+  color: #1e3a8a; /* Dark blue text */
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Weather Text Container */
+.weather_text_container p {
+  margin: 5px 0;
+  color: #333; /* Dark gray for better readability */
+  font-size: 14px;
+}
+
+/* Select Dropdown Styling */
+.content_card select {
+  font-size: 18px;
+  border: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  text-transform: uppercase;
+  margin: 15px 0;
+  background-color: transparent;
+  color: #1e3a8a;
+  border-bottom: 2px solid #1e3a8a;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Arrow Indicator for Select */
+.content_card select::after {
+  content: "▼";
+  position: absolute;
+  right: 20px;
+  color: #1e3a8a;
+  pointer-events: none;
+}
+
+/* Select Option Styling */
+.content_card select option {
+  background-color: #e0f7fa;
+  color: #1e3a8a;
+  padding: 10px;
+}
+
+/* Optional: Hover effect for options */
+.content_card select option:hover {
+  background-color: #b2ebf2; /* Lighter cyan */
+}
