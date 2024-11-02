@@ -1,0 +1,164 @@
+/* App.css */
+.app {
+  text-align: center;
+  margin-top: 50px;
+}
+.title {
+  font-size: 2.5rem; /* Large, readable font size */
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #b58863; /* Soft color that complements your theme */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  
+  /* Gradient background applied to text */
+  background: linear-gradient(90deg, #b58863, #f0d9b5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Decorative border */
+  padding: 0.5rem;
+  border-radius: 8px;
+  
+  /* Transition for hover effect */
+  transition: transform 0.2s ease-in-out;
+}
+
+.title:hover {
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.title:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(181, 136, 99, 0.5); /* Focus ring */
+}
+h1 {
+  font-family: "Arial", sans-serif;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+  gap: 2px;
+  width: fit-content;
+  margin: 0 auto !important;
+}
+.board + button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #b58863;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow */
+}
+
+.board + button:hover {
+  background-color: #a17556;
+  transform: translateY(-2px); /* Small lift effect */
+}
+
+.board + button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(181, 136, 99, 0.5); /* Focus ring */
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-square {
+  background-color: #f0d9b5;
+}
+
+.dark-square {
+  background-color: #b58863;
+}
+
+.piece {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.piece.white {
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.piece.black {
+  background-color: black;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.piece.selected {
+  outline: 3px solid yellow;
+  transform: scale(1.1);
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensures modal is above other elements */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.modal-content h1 {
+  font-size: 2rem;
+  color: #b58863; /* Title color */
+  margin: 0 0 1rem;
+}
+
+.modal-content p {
+  font-size: 1.5rem;
+  color: #f0d9b5; /* Text color */
+  margin-bottom: 1.5rem;
+}
+
+.modal-content button {
+  background-color: #b58863;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for button */
+}
+
+.modal-content button:hover {
+  background-color: #a17556;
+}
+
+.modal-content button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(181, 136, 99, 0.5); /* Focus ring */
+}
