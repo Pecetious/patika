@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "name": "Buy groceries",
+    "isDone": false
+  },
+  {
+    "id": "2",
+    "name": "Walk the dog",
+    "isDone": true
+  },
+  {
+    "id": "3",
+    "name": "Read a book",
+    "isDone": false
+  },
+  {
+    "id": "4",
+    "name": "Exercise",
+    "isDone": false
+  }
+]

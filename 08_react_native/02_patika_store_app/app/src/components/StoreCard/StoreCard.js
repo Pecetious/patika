@@ -2,7 +2,6 @@ import React from 'react';
 import {Image, Text, View} from 'react-native';
 import styles from './StoreCard.style';
 function StoreCard({product}) {
-  console.log(product);
   return (
     <View style={styles.container}>
       <Image
