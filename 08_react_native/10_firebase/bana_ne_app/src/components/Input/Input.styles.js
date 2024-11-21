@@ -4,13 +4,10 @@ export default StyleSheet.create({
   container: {
     padding: 8,
     margin: 10,
-    backgroundColor: '#1986E1',
+    backgroundColor: 'white',
     borderRadius: 5,
+    flexDirection: 'row',
     alignItems: 'center',
   },
-  title: {
-    fontWeight: 'bold',
-    color: 'white',
-    fontSize: 17,
-  },
+  input: {flex: 1},
 });

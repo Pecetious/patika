@@ -1,10 +1,10 @@
 import React from 'react';
 import {ActivityIndicator, Text, TouchableOpacity} from 'react-native';
 import styles from './Button.styles';
-function Button({title, onSelect, loading, header}) {
+function Button({title, onSelect, loading}) {
   return (
     <TouchableOpacity
-      style={header ? styles.header : styles.container}
+      style={styles.container}
       onPress={onSelect}
       disabled={loading}>
       {loading ? (
