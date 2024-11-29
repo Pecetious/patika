@@ -1,0 +1,16 @@
+version: "3.4"
+services:
+  todo_app:
+    container_name: node_server
+    build: .
+    ports:
+      - 3000:3000
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    volumes:
+      - todo-app-data:/data/db
+    ports:
+      - 27020:27017
+volumes:
+  todo-app-data:

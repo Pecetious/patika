@@ -1,0 +1,10 @@
+version: "3.4"
+services:
+  uploader_app:
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - uploader_app_uploads:/uploads
+volumes:
+  uploader_app_uploads:
